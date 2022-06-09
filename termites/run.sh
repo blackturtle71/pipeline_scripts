@@ -32,4 +32,4 @@ module load python/python-3.8.2
 
 
 python3 /home/agmikhaylova/termites/autoPipeline_simple.py /home/agmikhaylova/termites/newdb/cut_nucls.fasta COX2 > /mnt/lustre/agmikhaylova/termites/result.out
-
+ 
