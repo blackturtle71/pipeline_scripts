@@ -1,0 +1,31 @@
+
+This program aligns coding sequences by using their AA translation while allowing frameshifts and stop codons (either real or due to sequence errors). 
+
+Please check your command line: Missing required option: seq
+usage: java -jar -Xmx600m testJar_macse.jar -prog alignSequences [-ext_gap_ratio <.95>] [-fs <30>] [-fs_lr <10>] [-gap_ext <1>] [-gap_op <7>] [-gc_def
+       <The_Standard_Code>] [-gc_file <gc_file.txt>] [-out_AA <output_AA.fasta>] [-out_NT <output_NT.fasta>] -seq <input.fasta> [-seq_lr
+       <input_lr.fasta>] [-stop <100>] [-stop_lr <60>]
+     -ext_gap_ratio <.95>                 the gap cost is multiply by this ratio (< 1) to define the cost of gaps at the begining/end of sequences.
+     -fs <30>                             cost of a frameshift within the sequence
+     -fs_lr <10>                          cost of a frameshift within a less reliable sequence
+     -gap_ext <1>                         cost of a gap extension
+     -gap_op <7>                          cost of creating a gap
+     -gc_def <The_Standard_Code>          indicate the default genetic code
+     -gc_file <gc_file.txt>               file containing the list of genetic code to use for each sequence
+     -out_AA <output_AA.fasta>            Name of the output file that will contain the output AA alignment (default is
+                                          {input_file_prefixe}_AA.fasta).
+     -out_NT <output_NT.fasta>            Name of the output file that will contain the output NT alignment (default is
+                                          {input_file_prefixe}_NT.fasta).
+     -seq <input.fasta>                   reliable sequence input file in fasta format
+     -seq_lr <input_lr.fasta>             less reliable (pseudoGene, Reads) sequence input file in fasta format
+     -stop <100>                          cost of a stop codon not at the end of the sequence
+     -stop_lr <60>                        cost of a stop codon not at the end of a less reliable sequence
+
+
+Advised costs:
+=============
+By default, sequences are considered to be reliable coding sequences and the costs for frameshifts and stop codons are high (respectively 30 and 50).
+If you include reads or contigs from NGS, we advise to assign the corresponding sequences lower costs for frameshifts and stop codons (e.g. respectively 10 and 15, since it is frequent that NGS data contain an extra base or miss one).
+Similarly, if you include pseudogenes, we advise assigning to the corresponding sequences lower costs for frameshifts and stop codons (e.g. respectively 15 and 10, since they no longer undergo selective pressure a stop codon can rise from just a recent mutation).
+
+

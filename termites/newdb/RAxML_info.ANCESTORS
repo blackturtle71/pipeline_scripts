@@ -1,0 +1,86 @@
+
+You are using a proportion of Invariable sites estimate, although I don't
+like it. The likelihood epsilon "-f e" will be automatically lowered to 0.001
+to avoid unfavorable effects caused by simultaneous optimization of alpha and P-Invar
+
+
+IMPORTANT WARNING: Sequences RN_11 and RN_32 are exactly identical
+
+
+IMPORTANT WARNING: Sequences RN_29 and RN_55 are exactly identical
+
+
+IMPORTANT WARNING: Sequences RN_30 and RN_7 are exactly identical
+
+
+IMPORTANT WARNING: Sequences RN_85 and RN_84 are exactly identical
+
+IMPORTANT WARNING
+Found 4 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+An alignment file with sequence duplicates removed has already
+been printed to file query.out-mitocode_sel_tranalign.phy.reduced
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 124 distinct alignment patterns
+
+Found 0 invariant alignment patterns that correspond to 0 columns 
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA+P-Invar model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA+P-Invar Model parameters will be estimated up to an accuracy of 0.0010000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 124
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+Base frequencies: ML estimate
+
+
+
+
+RAxML was called as follows:
+
+/home/agmikhaylova/bin/raxmlHPC-PTHREADS-SSE3 -T 4 -f A -m GTRGAMMAIX -s query.out-mitocode_sel_tranalign.phy -t RAxML_bestTree.Rax_tree.rooted -n ANCESTORS 
+
+
+Marginal Ancestral Probabilities written to file:
+/mnt/lustre/agmikhaylova/termites/newdb/RAxML_marginalAncestralProbabilities.ANCESTORS
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/mnt/lustre/agmikhaylova/termites/newdb/RAxML_marginalAncestralStates.ANCESTORS
+
+Node-laballed ROOTED tree written to file:
+/mnt/lustre/agmikhaylova/termites/newdb/RAxML_nodeLabelledRootedTree.ANCESTORS
+
+
+Time for marginal ancestral state computation: 0.481976
+
