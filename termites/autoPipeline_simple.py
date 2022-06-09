@@ -28,3 +28,4 @@ for Seq in Sequences:
         protein = "".join(map(str.strip, lines[1:]))
         
         subprocess.call('./SCRIPT2.2.1.sh %s %s %s' % (species_name, protein, gene_name), shell=True)
+ 
