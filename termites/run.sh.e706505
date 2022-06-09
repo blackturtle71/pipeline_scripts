@@ -1,8 +1,0 @@
-Translate nucleic acid sequences
-rm: cannot remove `query.out-mitocode*': No such file or directory
-rm: cannot remove `yes.O': No such file or directory
-rm: cannot remove `RAxML_*': No such file or directory
-rm: cannot remove `parsimony.tmp.*': No such file or directory
-rm: cannot remove `outfile': No such file or directory
-rm: cannot remove `outtree': No such file or directory
-./SCRIPT2.2.1.sh: line 86: syntax error: unexpected end of file

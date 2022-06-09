@@ -1,8 +1,0 @@
-Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:571)
-	at java.util.ArrayList.get(ArrayList.java:349)
-	at align.KmerFreq.dist(KmerFreq.java:35)
-	at align.CodingMSA.buildProfile(CodingMSA.java:493)
-	at align.CodingMSA.buildAlignmentReliable(CodingMSA.java:649)
-	at align.CodingMSA.run(CodingMSA.java:659)
-	at utils.MacseMain.main(MacseMain.java:374)

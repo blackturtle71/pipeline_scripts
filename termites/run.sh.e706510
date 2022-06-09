@@ -1,1 +1,0 @@
-/var/lib/torque/mom_priv/jobs/706510.head02.SC: line 13: python3 /home/agmikhaylova/termites/autoPipeline_simple.py /home/agmikhaylova/termites/newdb/Cryptocercus.fasta COX2 > /mnt/lustre/agmikhaylova/termites/result.out: No such file or directory
